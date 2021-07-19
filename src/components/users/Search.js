@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-import PropTypes from 'prop-types';
 import GithubContext from '../../context/github/githubContext';
 import AlertContext from '../../context/alert/alertContext';
 
@@ -28,7 +27,7 @@ const Search = () => {
                 <input
                     type='text'
                     name='text'
-                    placeholder='Search Users...'
+                    placeholder='Search Users'
                     value={text}
                     onChange={onChange} />
                 <input type='submit' value='Seach' className='btn btn-dark btn-block' />
